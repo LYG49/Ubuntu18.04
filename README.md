@@ -7,7 +7,7 @@
 5.Torch
 6.tensorflow
 
-#1.第一步安裝顯卡驅動
+# 第一步安裝顯卡驅動
 這裡我們以RTX3080為例
 先進去NVIDA官網把驅動程式下載下來
 在等待RTX3080驅動程式的時候，先make和gcc安裝起來
@@ -33,7 +33,7 @@ watch -n 1 nvidia-smi
 查看CPU狀態
 top
 
-#第二步下載cuda
+# 第二步下載cuda
 這邊我Cuda版本下載的是11.3
 wget https://developer.download.nvidia.com/compute/cuda/11.3.0/local_installers/cuda_11.3.0_465.19.01_linux.run
 sudo sh cuda_11.3.0_465.19.01_linux.run
@@ -58,7 +58,7 @@ Build cuda_11.2.r11.2/compiler.29618528_0
 我以移除cuda版本10.2為例
 sudo /usr/local/cuda-10.2/bin/cuda-uninstaller
 
-#第三步下載cudnn
+# 第三步下載cudnn
 先去網路上找Cudnn下載檔
 載完解壓cuDNN包
 tar -xvf cudnn-linux-x86 64-8.4.0.24_cuda11.6-archive.tar.xz(這邊是你下載的cudnn檔案)
@@ -74,7 +74,7 @@ cd $HOME/cudnn_samples_v8/mnistCUDNN
 make clean && make
  ./mnistCUDNN
 
-#第四步安裝虛擬環境
+# 第四步安裝虛擬環境
 安裝virtualenv
 sudo apt-get install python3-pip
 sudo pip3 install virtualenv
@@ -94,7 +94,7 @@ mkvirtualenv <venv_name>
 啟用已經存在的虛擬環境
 Workon <venv>
 
-#第五步下載Torch
+# 第五步下載Torch
 
 安裝torch
 pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
@@ -107,7 +107,7 @@ print(torch.cuda.is_available())
 import torch
 torch.version.cuda
 
-#第六步下載tensorflow
+# 第六步下載tensorflow
 
 安裝tensorflow
 pip install tensorflow-gpu
