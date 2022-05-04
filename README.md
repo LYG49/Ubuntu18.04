@@ -1,4 +1,4 @@
-# Ubuntu 18.04 安裝RTX3080顯卡驅動
+# Ubuntu 18.04 安裝RTX3080顯卡驅動、Cuda、Cudnn、virtualenv、Torch、tensorflow
 在這邊我們會安裝東西如下：
 
 1.顯卡驅動
