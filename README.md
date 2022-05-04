@@ -1,1 +1,1 @@
-# Ubuntu18.04如何安裝顯卡驅動、Cuda、CuDnn
+# Ubuntu 18.04 安裝RTX3080顯卡驅動
